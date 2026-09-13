@@ -1,0 +1,25 @@
+# VirtualPiano Auto Player - Git Ignore Rules
+
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Editor & IDE Directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary, Backup and Log Files
+*.log
+*.tmp
+*.bak
+*.orig
+*~
+
+# AutoHotkey Compiler Outputs
+*.exe
+!bin/*.exe

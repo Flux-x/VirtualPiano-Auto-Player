@@ -72,6 +72,7 @@ LoadSavedPaths()
 LoadSettings()
 CreateGUI()
 SetupAllHotkeys()
+OnExit("CleanUp")
 return
 
 ; ============================================================
@@ -1226,3 +1227,8 @@ ExitApp
 SettingsGuiClose:
 Gui, Settings:Destroy
 return
+
+CleanUp(ExitReason, ExitCode) {
+    DllCall("winmm\timeEndPeriod", "uint", 1)
+}
+
